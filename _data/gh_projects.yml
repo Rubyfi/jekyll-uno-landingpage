@@ -1,0 +1,12 @@
+- name: Paint Conversion
+  gh_user: rubyfi
+  repo: paint-conversion
+  img: https://rubyfi.de/images/paint-conversion.jpg
+  desc: A tool to find similar colors from different acrylic paint ranges.
+
+- name: This Jekyll Theme
+  gh_user: rubyfi
+  repo: jekyll-uno-aboutme
+  img: https://miro.medium.com/max/1400/0*N8RG95bKJnnF-wpL.png
+  desc: An all-in-one landing page for Jekyll to display your socials, projects and CV.
+
