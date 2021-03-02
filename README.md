@@ -1,6 +1,6 @@
-# jekyll-uno
+# jekyll-uno-aboutme
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+Jekyll-Uno-Aboutme - a minimal, responsive theme for Jekyll based on the [Jekyll-Uno](https://github.com/joshgerdes/jekyll-uno).
 
 > :warning:
   This theme requires ruby and rubygems installed
@@ -9,13 +9,18 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 
 * Clean layout
 * Resposive layout
-* Pagination
 * Syntax highlighting
 * Social links
 * Tags listing page
 * Categories listing page
 * Google Analytics integration
-* Disqus integration
+* Projects Overview for GitHub
+
+
+### ToDos/Planned Features
+
+* Add project listings for other sites
+* Add CV function
 
 ---
 
