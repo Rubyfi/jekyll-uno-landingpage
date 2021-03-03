@@ -7,6 +7,7 @@ exclude: 'yes'
 $(document).ready(function () {
     $('a.panel-button').click(function (e) {
         //if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
+        $('a.panel-button').toggleClass('panel-button-pressed')
         if ($('.content-wrapper').hasClass('showing')){
             $('.content-wrapper').removeClass('animated slideInRight')
             $('.panel-cover').removeClass('panel-cover--collapsed')
