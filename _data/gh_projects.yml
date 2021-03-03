@@ -10,3 +10,9 @@
   img: https://miro.medium.com/max/1400/0*N8RG95bKJnnF-wpL.png
   desc: An all-in-one landing page for Jekyll to display your socials, projects and CV.
 
+- name: Henshin Multivariability
+  gh_user: SvenPeldszus
+  repo: henshin-multivar
+  img: https://rubyfi.de/images/projects/multivar-henshin.png
+  desc: An extension for the Henshin project that allows transformation of product lines with variability-aware rules.
+
