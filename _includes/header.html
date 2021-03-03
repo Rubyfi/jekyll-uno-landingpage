@@ -25,7 +25,7 @@
               {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}"
+                <a href="https://twitter.com/{{ site.author.twitter_username }}"
                   title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
                   <i class="faicon fab fa-twitter fa-lg"></i>
                   <span class="label">Twitter</span>
@@ -33,10 +33,25 @@
               </li>
               {% endif %}
 
+              {% if site.author.youtube_channelid %}
+              <!-- YouTube -->
+              <li class="navigation__item">
+                <a href="https://www.youtube.com/channel/{{ site.author.youtube_channelid }}"
+                    {% if site.author.youtube_username %}
+                      title="{{ site.author.youtube_username }} on YouTube" target="_blank">
+                    {% else %}
+                      title="{{ site.author.youtube_channelid }} on YouTube" target="_blank">
+                    {% endif %}
+                  <i class="fayticon fab fa-youtube"></i>
+                  <span class="label">YouTube</span>
+                </a>
+              </li>
+              {% endif %}
+
               {% if site.author.facebook_username %}
               <!-- Facebook -->
               <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}"
+                <a href="https://fb.me/{{ site.author.facebook_username }}"
                   title="{{ site.author.facebook_username }} on Facebook" target="_blank">
                   <i class="faicon fab fa-facebook fa-lg"></i>
                   <span class="label">Facebook</span>
