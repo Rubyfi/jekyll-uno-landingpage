@@ -21,6 +21,7 @@ Jekyll-Uno-Aboutme - a minimal, responsive theme for Jekyll based on the [Jekyll
 
 * Add CV panel.
 * Move socials to yaml file in data folder. This will allow ordering the social links.
+* Unify project data to one file. This will allow ordering of the projects list.
 
 ---
 
