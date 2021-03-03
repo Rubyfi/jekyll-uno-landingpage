@@ -27,7 +27,7 @@
               <li class="navigation__item">
                 <a href="http://twitter.com/{{ site.author.twitter_username }}"
                   title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="icon icon-social-twitter"></i>
+                  <i class="faicon fab fa-twitter fa-lg"></i>
                   <span class="label">Twitter</span>
                 </a>
               </li>
@@ -38,7 +38,7 @@
               <li class="navigation__item">
                 <a href="http://fb.me/{{ site.author.facebook_username }}"
                   title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
+                  <i class="faicon fab fa-facebook fa-lg"></i>
                   <span class="label">Facebook</span>
                 </a>
               </li>
@@ -49,7 +49,7 @@
               <li class="navigation__item">
                 <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}"
                   title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
+                  <i class="faicon fab fa-google fa-lg"></i>
                   <span class="label">LinkedIn</span>
                 </a>
               </li>
@@ -58,10 +58,32 @@
               {% if site.author.github_username %}
               <!-- GitHub -->
               <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}"
+                <a href="https://scholar.google.com/citations?user={{ site.author.github_username }}"
                   title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
+                  <i class="faicon fab fa-github fa-lg"></i>
                   <span class="label">GitHub</span>
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.author.google_scholar_username %}
+              <!-- Google Scholar -->
+              <li class="navigation__item">
+                <a href="https://scholar.google.de/citations?user={{ site.author.google_scholar_username }}"
+                   title="{{ site.author.name }} on Google Scholar" target="_blank">
+                  <i class="faicon fab fa-google fa-lg"></i>
+                  <span class="label">Google Scholar</span>
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.author.google_scholar_username %}
+              <!-- Orcid -->
+              <li class="navigation__item">
+                <a href="https://orcid.org/{{ site.author.orcid_username }}"
+                   title="{{ site.author.name }} on Orcid" target="_blank">
+                  <i class="faicon fab fa-orcid fa-lg"></i>
+                  <span class="label">Google Scholar</span>
                 </a>
               </li>
               {% endif %}
@@ -70,7 +92,7 @@
               <!-- Email -->
               <li class="navigation__item">
                 <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
+                  <i class="faicon far fa-envelope fa-lg"></i>
                   <span class="label">Email</span>
                 </a>
               </li>

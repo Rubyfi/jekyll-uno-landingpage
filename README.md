@@ -32,7 +32,7 @@ Jekyll-Uno-Aboutme - a minimal, responsive theme for Jekyll based on the [Jekyll
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `bundle exec jekyll serve --watch`
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+Access via: [http://localhost:4000/](http://localhost:4000/)
 
 If you would like to run without using the `github-pages` gem, update your Gemfile to the following:
 
@@ -47,8 +47,7 @@ gem 'kramdown-parser-gfm'
 
 ### Demo and Download
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+[Demo](https://rubyfi.de)
 
 ![jekyll-uno - free Jekyll theme](/screenshot.png)
 
