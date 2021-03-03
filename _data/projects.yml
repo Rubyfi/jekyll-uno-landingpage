@@ -1,7 +1,7 @@
 - name: Back-In-Time Evaluation
   #link: optional
   img: https://cdn.onebauer.media/one/empire-tmdb/films/105/images/x4N74cycZvKu5k3KDERJay4ajR3.jpg
-  desc: The subject of my PhD thesis. BITE aims to efficiently offer reverse debugging capabilites at run-time.
+  desc: The subject of my PhD thesis. BITE aims to offer efficient reverse debugging capabilites at run-time.
 
 - name: QPED
   link: https://qped.eu/
