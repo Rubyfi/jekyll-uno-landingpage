@@ -19,8 +19,8 @@ Jekyll-Uno-Aboutme - a minimal, responsive theme for Jekyll based on the [Jekyll
 
 ### ToDos/Planned Features
 
-* Add project listings for other sites
-* Add CV function
+* Add CV panel
+* 
 
 ---
 

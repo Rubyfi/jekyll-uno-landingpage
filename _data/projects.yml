@@ -2,3 +2,8 @@
   #link: optional
   img: https://cdn.onebauer.media/one/empire-tmdb/films/105/images/x4N74cycZvKu5k3KDERJay4ajR3.jpg
   desc: The subject of my PhD thesis. BITE aims to efficiently offer reverse debugging capabilites at run-time.
+
+- name: QPED
+  link: https://qped.eu/
+  img: https://rubyfi.de/images/projects/qped.png
+  desc: Erasmus+ project *Quality-focussed Programming Education* with the goal to put more focus on proper testing methodology in computer science education.
