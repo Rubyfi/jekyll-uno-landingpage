@@ -7,3 +7,8 @@
   link: https://qped.eu/
   img: https://rubyfi.de/images/projects/qped.png
   desc: Erasmus+ project *Quality-focussed Programming Education* with the goal to put more focus on proper testing methodology in computer science education.
+
+- name: Henshin
+  link: https://www.eclipse.org/henshin/
+  img: https://rubyfi.de/images/projects/eclipse.png
+  desc: The Henshin project provides a state-of-the-art model transformation language for the Eclipse Modeling Framework.
