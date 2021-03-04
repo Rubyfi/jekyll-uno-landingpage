@@ -1,4 +1,4 @@
-# jekyll-uno-aboutme
+# jekyll-uno-landingpage
 
 Jekyll-Uno-Aboutme - a minimal, responsive theme for Jekyll based on the [Jekyll-Uno](https://github.com/joshgerdes/jekyll-uno).
 
