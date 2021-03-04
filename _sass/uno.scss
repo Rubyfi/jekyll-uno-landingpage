@@ -121,7 +121,6 @@ a {
 	text-decoration: none;
 	color: #03a9f4 ; }
 	a:hover {
-		color: #67daff;
 		-o-transition: .5s;
 		-ms-transition: .5s;
 		-moz-transition: .5s;
@@ -389,6 +388,10 @@ hr {
 	font-family: "Raleway", serif;
 }
 
+.panel-button:hover {
+	color: #005b9f;
+}
+
 .panel-button-pressed {
 	background: #005b9f;
 }
@@ -574,7 +577,7 @@ nav {
 		color: #FFF;
 		opacity: .8; }
 		.navigation__item a:hover {
-			color: #FFF;
+			color: #5ba4e5;
 			border-color: #FFF;
 			opacity: 1; }
 
