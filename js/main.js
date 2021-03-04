@@ -33,7 +33,23 @@ $(document).ready(function () {
         togglePanel('#projects-button', '#projects-panel')
     })
 
+    $('#btn-mobile-menu').click(function () {
+        $('.navigation-wrapper').toggleClass('visible')
+        $('#btn-mobile-menu').toggleClass('hidden')
+        $('#btn-mobile-close').toggleClass('hidden')
+    })
 
+    $('#btn-mobile-close').click(function () {
+        $('.navigation-wrapper').toggleClass('visible')
+        $('#btn-mobile-close').toggleClass('hidden')
+        $('#btn-mobile-menu').toggleClass('hidden')
+    })
+
+
+    // $('.navigation-wrapper .projects-button').click(function () {
+    //     $('.navigation-wrapper').toggleClass('visible animated fadeOut')
+    //     $('.btn-mobile-menu').toggleClass('icon-list icon-x-circle animated fadeIn')
+    // })
 
     // $('a.panel-button').click(function (e) {
     //     //if ($('.panel-cover').hasClass('panel-cover--collapsed')) return

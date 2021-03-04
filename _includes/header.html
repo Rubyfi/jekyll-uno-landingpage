@@ -1,6 +1,6 @@
 <span class="mobile btn-mobile-menu">
-  <i class="icon icon-list btn-mobile-menu__icon"></i>
-  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+  <i id="btn-mobile-menu" class="fas fa-bars"></i>
+  <i id="btn-mobile-close" class="fas fa-times hidden"></i>
 </span>
 
 <header class="panel-cover {% if site.disable_landing_page %}panel-cover--collapsed{% endif %}"
@@ -25,7 +25,7 @@
               {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
-                <a href="https://twitter.com/{{ site.author.twitter_username }}"
+                <a id="twitter" href="https://twitter.com/{{ site.author.twitter_username }}"
                   title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
                   <i class="faicon fab fa-twitter fa-lg"></i>
                   <span class="label">Twitter</span>
@@ -36,7 +36,7 @@
               {% if site.author.youtube_channelid %}
               <!-- YouTube -->
               <li class="navigation__item">
-                <a href="https://www.youtube.com/channel/{{ site.author.youtube_channelid }}"
+                <a id="youtube" href="https://www.youtube.com/channel/{{ site.author.youtube_channelid }}"
                     {% if site.author.youtube_username %}
                       title="{{ site.author.youtube_username }} on YouTube" target="_blank">
                     {% else %}
@@ -51,7 +51,7 @@
               {% if site.author.facebook_username %}
               <!-- Facebook -->
               <li class="navigation__item">
-                <a href="https://fb.me/{{ site.author.facebook_username }}"
+                <a id="facebook" href="https://fb.me/{{ site.author.facebook_username }}"
                   title="{{ site.author.facebook_username }} on Facebook" target="_blank">
                   <i class="faicon fab fa-facebook fa-lg"></i>
                   <span class="label">Facebook</span>
@@ -62,7 +62,7 @@
               {% if site.author.linkedin_username %}
               <!-- LinkedIn -->
               <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}"
+                <a id="linkedin" href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}"
                   title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
                   <i class="faicon fab fa-linkedin-in fa-lg"></i>
                   <span class="label">LinkedIn</span>
@@ -73,7 +73,7 @@
               {% if site.author.github_username %}
               <!-- GitHub -->
               <li class="navigation__item">
-                <a href="https://github.com/{{ site.author.github_username }}"
+                <a id="github" href="https://github.com/{{ site.author.github_username }}"
                   title="{{ site.author.github_username }} on GitHub" target="_blank">
                   <i class="faicon fab fa-github fa-lg"></i>
                   <span class="label">GitHub</span>
@@ -84,9 +84,9 @@
               {% if site.author.google_scholar_username %}
               <!-- Google Scholar -->
               <li class="navigation__item">
-                <a href="https://scholar.google.de/citations?user={{ site.author.google_scholar_username }}"
+                <a id="googlescholar" href="https://scholar.google.de/citations?user={{ site.author.google_scholar_username }}"
                    title="{{ site.author.name }} on Google Scholar" target="_blank">
-                  <i class="faicon fab fa-google fa-lg"></i>
+                  <i class="aiicon ai ai-google-scholar fa-lg"></i>
                   <span class="label">Google Scholar</span>
                 </a>
               </li>
@@ -95,7 +95,7 @@
               {% if site.author.google_scholar_username %}
               <!-- Orcid -->
               <li class="navigation__item">
-                <a href="https://orcid.org/{{ site.author.orcid_username }}"
+                <a id="orcid" href="https://orcid.org/{{ site.author.orcid_username }}"
                    title="{{ site.author.name }} on Orcid" target="_blank">
                   <i class="faicon fab fa-orcid fa-lg"></i>
                   <span class="label">Google Scholar</span>
@@ -106,8 +106,8 @@
               {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="faicon far fa-envelope fa-lg"></i>
+                <a id="mail"  href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <i class="faicon fas fa-at fa-lg"></i>
                   <span class="label">Email</span>
                 </a>
               </li>
