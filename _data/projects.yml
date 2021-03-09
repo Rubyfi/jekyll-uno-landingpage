@@ -19,14 +19,15 @@
   img: https://rubyfi.de/images/projects/multivar-henshin.png
   desc: An extension for the Henshin project that allows transformation of product lines with variability-aware rules.
 
-- name: Paint Conversion
-  gh_user: rubyfi
-  repo: paint-conversion
-  img: https://rubyfi.de/images/projects/paint-conversion.jpg
-  desc: A tool to find similar colors from different acrylic paint ranges.
-
 - name: This Jekyll Theme
   gh_user: rubyfi
   repo: jekyll-uno-landingpage
   img: https://miro.medium.com/max/1400/0*N8RG95bKJnnF-wpL.png
   desc: An all-in-one landing page for Jekyll to display your socials, projects and CV.
+
+
+- name: Paint Conversion
+  gh_user: rubyfi
+  repo: paint-conversion
+  img: https://rubyfi.de/images/projects/paint-conversion.jpg
+  desc: A tool to find similar colors from different acrylic paint ranges.
