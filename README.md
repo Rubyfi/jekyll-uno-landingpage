@@ -50,7 +50,8 @@ gem 'kramdown-parser-gfm'
 
 [Demo](https://rubyfi.de)
 
-![jekyll-uno - free Jekyll theme](/screenshot.png)
+![landingpage - base view](/screenshot.png)
+![landingpage - navigation view](/screenshot_nav.png)
 
 ---
 
