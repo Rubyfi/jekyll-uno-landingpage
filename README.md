@@ -12,7 +12,7 @@
 * Syntax highlighting
 * Social links
 * Google Analytics integration
-* Projects Overview for GitHub
+* Projects overview
 
 
 ### ToDos/Planned Features
