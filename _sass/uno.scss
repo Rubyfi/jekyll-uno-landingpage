@@ -91,8 +91,12 @@ body {
 	background: conic-gradient(from 0deg, #ea4335 90deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 0deg);
 	-webkit-background-clip: text;
 	background-clip: text;
-	color: transparent;
 	-webkit-text-fill-color: transparent;
+	color: transparent;
+	-webkit-transition: linear 0.5s;
+	-o-transition: linear 0.5s;
+	-ms-transition: linear 0.5s;
+	-moz-transition: linear 0.5s;
 	transition: linear 0.5s;
 }
 
