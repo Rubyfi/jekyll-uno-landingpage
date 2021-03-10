@@ -15,11 +15,11 @@ robots: noindex
 
                     <h4><a
                             {% if project.gh_user %}
-                                href="https://github.com/{{ project.gh_user }}/{{ project.repo }}"
-                            {% else %}
-                                href="{{project.link}}"
+                                href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank"
+                            {% elsif project.link %}
+                                href="{{project.link}}" target="_blank"
                             {% endif %}
-                            target="_blank">{{ project.name }}</a></h4>
+                            >{{ project.name }}</a></h4>
                 </div>
                 <div class="timeline-body">
                     {{ project.desc | markdownify }}
