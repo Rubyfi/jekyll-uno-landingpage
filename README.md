@@ -1,6 +1,6 @@
-# jekyll-uno-landingpage
+# landingpage
 
-Jekyll-Uno-Aboutme - a minimal, responsive theme for Jekyll based on the [Jekyll-Uno](https://github.com/joshgerdes/jekyll-uno).
+ Landingpage - a minimal, responsive portfolio for Jekyll based on [Jekyll-Uno](https://github.com/joshgerdes/jekyll-uno).
 
 > :warning:
   This theme requires ruby and rubygems installed
@@ -11,24 +11,23 @@ Jekyll-Uno-Aboutme - a minimal, responsive theme for Jekyll based on the [Jekyll
 * Resposive layout
 * Syntax highlighting
 * Social links
-* Tags listing page
-* Categories listing page
 * Google Analytics integration
 * Projects Overview for GitHub
 
 
 ### ToDos/Planned Features
 
-* Add CV panel.
-* Move socials to yaml file in data folder. This will allow ordering the social links.
-* Unify project data to one file. This will allow ordering of the projects list.
+* Add CV panel
+* Make socials more configurable (color, icon, order, etc.)
+* Add portfolio panel for photos and art
+* Add additional socials, such as instagram, reddit, and tiktok.
 
 ---
 
 ### Install and Test
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
+1. Download or clone repo `git clone git@github.com:Rubyfi/jekyll-uno-landingpage.git`
+2. Enter the folder: `cd jekyll-uno-landingpage/`
 3. If you don't have bundler installed: `gem install bundler`
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `bundle exec jekyll serve --watch`
