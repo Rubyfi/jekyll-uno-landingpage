@@ -23,9 +23,9 @@ defaults:
   -
     scope:
       path: ''
-      type: 'posts'
+      type: 'pages'
     values:
-        layout: 'post'
+        layout: 'default'
 
 # Build settings
 destination: _site
@@ -45,4 +45,4 @@ kramdown:
   hard_wrap: false
 
 #plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'docker-compose.yml']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'docker-compose.yml', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']

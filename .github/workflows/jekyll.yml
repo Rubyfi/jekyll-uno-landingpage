@@ -1,0 +1,46 @@
+name: Jekyll CI
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+   
+    # Use GitHub Actions' cache to shorten build times and decrease load on servers
+    - name: cache
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    
+    # Build site
+    - name: build
+      run: |
+        sudo gem install bundler
+        bundle install
+        bundle exec jekyll build
+    
+    # Deploy to server via SSH
+    - name: deploy
+      run: |
+        mkdir -p ~/.ssh/
+        echo "Creating private key..."
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy
+        chmod 600 ~/.ssh/deploy
+        eval `ssh-agent -s` > /dev/null
+        ssh-add ~/.ssh/deploy 2> /dev/null
+        echo "Scanning target host..."
+        ssh-keyscan $SSH_HOST > ~/.ssh/known_hosts 2> /dev/null
+        echo "Copying files..."
+        rsync -e 'ssh -q' -a -q --delete _site/ $SSH_USER@$SSH_HOST:html/
+      env:
+        SSH_USER: ${{secrets.SSH_USER}}
+        SSH_HOST: ${{secrets.SSH_HOST}}
+        SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
