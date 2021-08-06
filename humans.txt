@@ -5,16 +5,16 @@ exclude: 'yes'
 ---
 
 /* TEAM */
-Developer & Designer: Josh Gerdes
-Twitter: @joshgerdes
-Site: http://joshgerdes.com
-Location: Minneapolis, MN, USA
+Developer & Designer: Stefan Schulz
+Twitter: @0xRubyfi
+Site: http://rubyfi.de
+Location: Germany
 						
 /* THANKS */
-Name: Dale Anthony
+Name: Dale Anthony, Josh Gerdes
 
 /* SITE */
 Last update: {{ site.time | date: "%Y/%m/%d" }}
 Standards: HTML5, CSS3
 Components: Jekyll
-Software: Sublime Text, Photoshop
+Software: VSCode
