@@ -12,20 +12,22 @@ $(document).ready(function () {
             $('.panel-cover').removeClass('panel-cover--collapsed')
             $('.panel-cover').css('max-width', '100%')
             $('.panel-cover').animate({'width': '100%'}, 400, swing = 'swing', function () {})
+            $('#navbar').animate({'width': '100%'}, 400, swing = 'swing', function () {})
             $('.content-wrapper').removeClass('showing')
             window.location.hash = '';
             parent.location.hash = ''
-            return;
-        }
-        currentWidth = $('.panel-cover').width()
-        if (currentWidth < 960) {
-            $('.panel-cover').addClass('panel-cover--collapsed')
-            $('.content-wrapper').addClass('animated slideInRight')
         } else {
-            $('.panel-cover').css('max-width', currentWidth)
-            $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
+            currentWidth = $('.panel-cover').width()
+            if (currentWidth < 960) {
+                $('.panel-cover').addClass('panel-cover--collapsed')
+                $('.content-wrapper').addClass('animated slideInRight')
+            } else {
+                $('.panel-cover').css('max-width', currentWidth)
+                $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
+                $('#navbar').animate({'width': '50%'}, 400, swing = 'swing', function () {})
+            }
+            $('.content-wrapper').addClass('showing');
         }
-        $('.content-wrapper').addClass('showing');
     }
 
     // document.getElementById('projects-panel').style.display = 'none'

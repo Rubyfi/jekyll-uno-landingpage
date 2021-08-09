@@ -901,6 +901,7 @@ nav {
 }
 
 .navigation--social {
+
 }
 .navigation--social a {
   padding: 6px 8px 6px 9px;
@@ -1131,6 +1132,7 @@ input[type="tel"]:-ms-input-placeholder {
   .panel-main {
     display: table;
     position: relative;
+    text-align: center
   }
 
   .panel-cover--collapsed {
@@ -1254,4 +1256,8 @@ input[type="tel"]:-ms-input-placeholder {
     display: block;
     margin-bottom: 0.4em;
   }
+}
+
+#navbar {
+  margin: auto;
 }
