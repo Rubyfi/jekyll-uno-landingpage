@@ -31,9 +31,9 @@ socials:
   #  channel_id:  
   #  display_name: (optional)
   #instagram:
-  #  user:id
-  #tiktok:
   #  user_id: 
+  #tiktok:
+  #  user_id:
   
 
 defaults:
