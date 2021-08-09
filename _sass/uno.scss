@@ -204,7 +204,8 @@ body:after {
 }
 
 #reddit:hover {
-	color: #FF5700;
+  color: #FFFFFF;
+  background-color: #FF5700;
 }
 
 #googlescholar:hover > #googlescholar-icon {
@@ -246,6 +247,18 @@ body:after {
   -ms-transition: linear 0.5s;
   -moz-transition: linear 0.5s;
   transition: linear 0.5s;
+}
+
+#tiktok:hover > #tiktok-icon {
+	color: #000000;
+	text-shadow: -1px -1px #25F4EE, 1px 1px #FE2C55;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-transition: 0.5s, text-shadow 0.5s;
+	-o-transition: 0.5s, text-shadow 0.5s;
+	-ms-transition: 0.5s, text-shadow 0.5s;
+	-moz-transition: 0.5s, text-shadow 0.5s;
+	transition: 0.5s, text-shadow  0.5s;
 }
 
 #orcid:hover {
