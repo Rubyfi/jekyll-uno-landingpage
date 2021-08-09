@@ -1,0 +1,10 @@
+{% if site.socials.twitch %}
+    <!-- Twitch -->
+    <li class="navigation__item">
+    <a id="twitch" href="https://twitch.tv/{{ site.socials.twitch.user_id }}"
+        title="u/{{ site.socials.twitch.user_id }} on Twitch" target="_blank">
+        <i id="twitch-icon" class="faicon fab fa-twitch fa-lg"></i>
+        <span class="label">Twitch</span>
+    </a>
+    </li>
+{% endif %}
