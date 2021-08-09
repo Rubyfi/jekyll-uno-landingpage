@@ -25,7 +25,6 @@
   img: https://miro.medium.com/max/1400/0*N8RG95bKJnnF-wpL.png
   desc: An all-in-one landing page for Jekyll to display your socials, projects and CV.
 
-
 - name: Paint Conversion
   gh_user: rubyfi
   repo: paint-conversion
