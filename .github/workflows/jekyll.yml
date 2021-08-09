@@ -25,7 +25,9 @@ jobs:
       run: |
         sudo gem install bundler
         bundle install
-        bundle exec jekyll build
+        echo "github_url: https://github.com/$GITHUB_REPOSITORY" > _config-github.yml
+        echo "commit_id: $GITHUB_SHA" >> _config-github.yml
+        bundle exec jekyll build --config _config.yml,_config-github.yml
     
     # Deploy to server via SSH
     - name: deploy
