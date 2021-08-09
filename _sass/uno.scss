@@ -222,6 +222,28 @@ body:after {
   transition: linear 0.5s;
 }
 
+//Based on https://codepen.io/thomasrye/pen/VaRoYv
+#instagram:hover > #instagram-icon {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
 #orcid:hover {
   color: #a5cf00;
 }

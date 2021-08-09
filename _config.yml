@@ -28,6 +28,8 @@ socials:
   #youtube:
   #  channel_id:  
   #  display_name: (optional)
+  #instagram:
+  #  user:id
   
 
 defaults:
