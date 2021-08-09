@@ -18,9 +18,7 @@
 ### ToDos/Planned Features
 
 * Add CV panel
-* Make socials more configurable (color, icon, order, etc.)
 * Add portfolio panel for photos and art
-* Add additional socials, such as instagram, reddit, and tiktok.
 
 ---
 
