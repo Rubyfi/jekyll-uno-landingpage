@@ -183,29 +183,12 @@ body:after {
   padding-right: 6px;
 }
 
-#twitter:hover {
-  color: #1da1f2;
-}
-
-#youtube:hover {
-  color: #ff0000;
-}
-
 #facebook:hover {
   color: #3b5998;
 }
 
-#linkedin:hover {
-  color: #0077b5;
-}
-
 #github:hover {
   color: #c9510c;
-}
-
-#reddit:hover {
-  color: #FFFFFF;
-  background-color: #FF5700;
 }
 
 #googlescholar:hover > #googlescholar-icon {
@@ -225,6 +208,10 @@ body:after {
   -ms-transition: linear 0.5s;
   -moz-transition: linear 0.5s;
   transition: linear 0.5s;
+}
+
+#info:hover {
+  color: #bf0d3e;
 }
 
 //Based on https://codepen.io/thomasrye/pen/VaRoYv
@@ -249,9 +236,26 @@ body:after {
   transition: linear 0.5s;
 }
 
+#linkedin:hover {
+  color: #0077b5;
+}
+
+#mail:hover {
+  color: #ffa000;
+}
+
+#orcid:hover {
+  color: #a5cf00;
+}
+
+#reddit:hover {
+  color: #cee3f8;
+  background-color: #ff5700;
+}
+
 #tiktok:hover > #tiktok-icon {
 	color: #000000;
-	text-shadow: -1px -1px #25F4EE, 1px 1px #FE2C55;
+	text-shadow: -1px -1px #25f4ee, 1px 1px #fe2c55;
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-transition: 0.5s, text-shadow 0.5s;
@@ -266,16 +270,12 @@ body:after {
   background-color: #f1f1f1;
 }
 
-#orcid:hover {
-  color: #a5cf00;
+#twitter:hover {
+  color: #1da1f2;
 }
 
-#mail:hover {
-  color: #ffa000;
-}
-
-#info:hover {
-  color: #9900ff;
+#youtube:hover {
+  color: #ff0000;
 }
 
 html,
@@ -307,6 +307,7 @@ a {
   color: #03a9f4;
 }
 a:hover {
+  background-color: #333333;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
