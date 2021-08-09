@@ -10,14 +10,25 @@ font_awesome: '57918ba98d.js'
 
 author:
   name: 'Stefan Schulz'
-  email: hallo@rubyfi.de
-  twitter_username: 0xRubyfi
-  github_username:  rubyfi
-  google_scholar_username: VPbzSVMAAAAJ
-  orcid_username: 0000-0002-8310-7676
-  linkedin_username: stefan-schulz-017012114
-  #youtube_channelid:
-  #youtube_username:
+
+# The order of the social links is defined by their order in this list
+socials:
+  github:
+    user_id: rubyfi
+  scholar: 
+    user_id: VPbzSVMAAAAJ
+  orcid: 
+    user_id: 0000-0002-8310-7676
+  linkedin: 
+    user_id: stefan-schulz-017012114
+  twitter: 
+    user_id: 0xRubyfi
+  email: 
+    address: hallo@rubyfi.de
+  #youtube:
+  #  channel_id:  
+  #  display_name: (optional)
+  
 
 defaults:
   -
@@ -45,4 +56,4 @@ kramdown:
   hard_wrap: false
 
 #plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'docker-compose.yml', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'docker-compose.yml', 'socials/', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']

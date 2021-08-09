@@ -1,0 +1,9 @@
+{% if site.socials.email %}
+    <!-- Email -->
+    <li class="navigation__item">
+    <a id="mail"  href="mailto:{{ site.socials.email.address }}" title="Email {{ site.socials.email.address }}" target="_blank">
+        <i class="faicon fas fa-at fa-lg"></i>
+        <span class="label">Email</span>
+    </a>
+    </li>
+{% endif %}

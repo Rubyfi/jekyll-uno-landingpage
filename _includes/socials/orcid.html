@@ -1,0 +1,10 @@
+{% if site.socials.orcid %}
+    <!-- ORCID -->
+    <li class="navigation__item">
+    <a id="orcid" href="https://orcid.org/{{ site.socials.orcid.user_id }}"
+        title="{{ site.author.name }} on Orcid" target="_blank">
+        <i id="orcid-icon" class="faicon fab fa-orcid fa-lg"></i>
+        <span class="label">ORCID</span>
+    </a>
+    </li>
+{% endif %}

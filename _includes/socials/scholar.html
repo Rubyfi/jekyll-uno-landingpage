@@ -1,0 +1,10 @@
+{% if site.socials.scholar %}
+    <!-- Google Scholar -->
+    <li class="navigation__item">
+    <a id="googlescholar" href="https://scholar.google.de/citations?user={{ site.socials.scholar.user_id }}"
+        title="{{ site.author.name }} on Google Scholar" target="_blank">
+        <i id="googlescholar-icon" class="aiicon ai ai-google-scholar fa-lg"></i>
+        <span class="label">Google Scholar</span>
+    </a>
+    </li>
+{% endif %}

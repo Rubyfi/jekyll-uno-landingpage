@@ -1,0 +1,14 @@
+{% if site.socials.youtube %}
+    <!-- YouTube -->
+    <li class="navigation__item">
+    <a id="youtube" href="https://www.youtube.com/channel/{{ site.socials.youtube.channel_id }}"
+        {% if site.author.youtube_username %}
+            title="{{ site.socials.youtube.display_name  }} on YouTube" target="_blank">
+        {% else %}
+            title="{{ site.socials.youtube.channel_id  }} on YouTube" target="_blank">
+        {% endif %}
+        <i class="fayticon fab fa-youtube"></i>
+        <span class="label">YouTube</span>
+    </a>
+    </li>
+{% endif %}

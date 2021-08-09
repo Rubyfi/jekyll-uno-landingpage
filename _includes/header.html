@@ -21,97 +21,13 @@
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
+              
+              <!-- Generate social links -->
+              {% for social in site.socials %}
+                {% assign link =  social[0] %}
+                {% include socials/{{ link }}.html %}
+              {% endfor %}
 
-              {% if site.author.twitter_username %}
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a id="twitter" href="https://twitter.com/{{ site.author.twitter_username }}"
-                  title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="faicon fab fa-twitter fa-lg"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.youtube_channelid %}
-              <!-- YouTube -->
-              <li class="navigation__item">
-                <a id="youtube" href="https://www.youtube.com/channel/{{ site.author.youtube_channelid }}"
-                    {% if site.author.youtube_username %}
-                      title="{{ site.author.youtube_username }} on YouTube" target="_blank">
-                    {% else %}
-                      title="{{ site.author.youtube_channelid }} on YouTube" target="_blank">
-                    {% endif %}
-                  <i class="fayticon fab fa-youtube"></i>
-                  <span class="label">YouTube</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a id="facebook" href="https://fb.me/{{ site.author.facebook_username }}"
-                  title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="faicon fab fa-facebook fa-lg"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.linkedin_username %}
-              <!-- LinkedIn -->
-              <li class="navigation__item">
-                <a id="linkedin" href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}"
-                  title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="faicon falnicon fab fa-linkedin-in fa-lg"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.github_username %}
-              <!-- GitHub -->
-              <li class="navigation__item">
-                <a id="github" href="https://github.com/{{ site.author.github_username }}"
-                  title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="faicon fab fa-github fa-lg"></i>
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.google_scholar_username %}
-              <!-- Google Scholar -->
-              <li class="navigation__item">
-                <a id="googlescholar" href="https://scholar.google.de/citations?user={{ site.author.google_scholar_username }}"
-                   title="{{ site.author.name }} on Google Scholar" target="_blank">
-                  <i id="googlescholar-icon" class="aiicon ai ai-google-scholar fa-lg"></i>
-                  <span class="label">Google Scholar</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.google_scholar_username %}
-              <!-- Orcid -->
-              <li class="navigation__item">
-                <a id="orcid" href="https://orcid.org/{{ site.author.orcid_username }}"
-                   title="{{ site.author.name }} on Orcid" target="_blank">
-                  <i id="orcid-icon" class="faicon fab fa-orcid fa-lg"></i>
-                  <span class="label">Google Scholar</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a id="mail"  href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="faicon fas fa-at fa-lg"></i>
-                  <span class="label">Email</span>
-                </a>
-              </li>
-              {% endif %}
               <!-- Info -->
               <li class="navigation__item">
                 <a id="info"  href="{{ site.baseurl }}/impressum.html" title="Impressum" target="_blank">
