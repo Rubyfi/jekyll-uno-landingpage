@@ -24,7 +24,7 @@ $(document).ready(function () {
             } else {
                 $('.panel-cover').css('max-width', currentWidth)
                 $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
-                $('#navbar').animate({'width': '50%'}, 400, swing = 'swing', function () {})
+                $('#navbar').animate({'width': $('#projects-toggle').width()}, 400, swing = 'swing', function () {})
             }
             $('.content-wrapper').addClass('showing');
         }
