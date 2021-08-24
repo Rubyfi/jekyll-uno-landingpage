@@ -19,6 +19,7 @@
 
 * Add CV panel
 * Add portfolio panel for photos and art
+* Add bibliography for publications
 
 ---
 
@@ -31,17 +32,6 @@
 4. Start Jekyll server: `bundle exec jekyll serve --watch`
 
 Access via: [http://localhost:4000/](http://localhost:4000/)
-
-If you would like to run without using the `github-pages` gem, update your Gemfile to the following:
-
-```
-source 'https://rubygems.org'
-gem 'jekyll-paginate'
-gem 'jekyll-watch'
-gem 'kramdown'
-gem 'kramdown-parser-gfm'
-```
----
 
 ### Demo and Download
 
