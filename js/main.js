@@ -3,7 +3,15 @@ layout: null
 sitemap:
 exclude: 'yes'
 ---
+
 $(document).ready(function () {
+    const powerUps = [56,56,50,50,52,54,52,54,98,97];
+    var powerUpProgression = [...powerUps];
+    document.getElementById('navbar').classList.remove('hidden');
+    document.getElementById('projects-toggle').classList.remove('hidden');
+    document.getElementById('mobile-bar').classList.remove('hidden');
+    document.getElementById('js-hint').classList.add('hidden')
+
     function togglePanel(buttonID, panelID) {
         $(buttonID).toggleClass('panel-button-pressed')
         if ($('.content-wrapper').hasClass('showing')){
@@ -46,8 +54,6 @@ $(document).ready(function () {
         $('#btn-mobile-menu').toggleClass('hidden')
     })
 
-    const powerUps = [56,56,50,50,52,54,52,54,98,97];
-    var powerUpProgression = [...powerUps];
     $(document).keypress(function(event){
         if (powerUpProgression.length > 0) {
             if (powerUpProgression[0] == event.which) {

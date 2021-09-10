@@ -1,12 +1,15 @@
-<span class="mobile btn-mobile-menu">
+<span id="mobile-bar" class="mobile btn-mobile-menu hidden">
   <i id="btn-mobile-menu" class="fas fa-bars"></i>
   <i id="btn-mobile-close" class="fas fa-times hidden"></i>
+</span>
+
+<span id="js-hint">
+  <p id="js-hint__text"> This site requires JavaScript.</p>
 </span>
 
 <header id="background-image" class="panel-cover {% if site.disable_landing_page %}panel-cover--collapsed{% endif %}"
   style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
   <div class="panel-main">
-
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
         <a id="home-panel" href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
@@ -17,7 +20,7 @@
         <p class="panel-cover__description">{{ site.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
-        <div id="navbar" class="navigation-wrapper">
+        <div id="navbar" class="navigation-wrapper hidden">
 
           <nav id="social-links" class="cover-navigation navigation--social">
             <ul class="navigation">
@@ -38,18 +41,16 @@
             </ul>
           </nav>
           
-          <nav id="projects-toggle" class="cover-navigation cover-navigation--primary">
+          <nav id="projects-toggle" class="cover-navigation cover-navigation--primary hidden">
             <ul class="navigation">
               <li class="navigation__item"><a title="List of projects" id="projects-button" class="panel-button projects-button"><i class="fas fa-code"></i> Projects</a></li>
             </ul>
           </nav>
-
         </div>
 
       </div>
 
     </div>
-
     <div class="panel-cover--overlay"></div>
   </div>
 </header>
