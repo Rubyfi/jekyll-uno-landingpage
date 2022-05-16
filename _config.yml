@@ -25,10 +25,10 @@ socials:
     user_id: stefan-schulz-017012114
   twitter: 
     user_id: 0xRubyfi
-  reddit:
-    user_id: rubyfi
   email: 
     address: hallo@rubyfi.de
+  #reddit:
+  #  user_id: rubyfi
   #youtube:
   #  channel_id:  
   #  display_name: (optional)
