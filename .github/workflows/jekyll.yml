@@ -23,6 +23,7 @@ jobs:
     # Build site
     - name: build
       run: |
+        export BUNDLE_PATH=~/.gems
         gem install bundler
         bundle install
         echo "github_url: https://github.com/$GITHUB_REPOSITORY" > _config-github.yml
