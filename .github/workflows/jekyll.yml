@@ -19,12 +19,14 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-gems-
+
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0.0'
     
     # Build site
     - name: build
       run: |
-        export BUNDLE_PATH=~/.gems
-        gem install bundler
         bundle install
         echo "github_url: https://github.com/$GITHUB_REPOSITORY" > _config-github.yml
         echo "commit_id: $GITHUB_SHA" >> _config-github.yml
